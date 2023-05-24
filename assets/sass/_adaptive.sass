@@ -1,7 +1,12 @@
-@media (min-width: 1140px)
+@media (min-width: 1279px)
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+        padding: 0 0
+    #header 
+        .header__row
+            margin: 0 0
+            padding: 22px 40px!important
 
-// (min-width: 1140px)
-    
+//(min-width: 1270px)
 
 @media (min-width: 960px)
     .container
@@ -10,25 +15,226 @@
     #header
         .container
             max-width: 1360px
-            padding: 0 40px
 // (min-width: 960px)
 
-@media (max-width: 1440px) 
-    main
-    .index__page
-        position: relative
-        max-width: 1920px
-        height: 2930px
-        background-image: url(../img/index-bg.png)
-        margin-left: -960px
-        left: 50%
+@media (min-width: 780px)
+    .index__help
+        .index__help_phone
+            img
+                display: none
+    .index__help 
+        .index__steps_img
+            display: none
+    .index__steps
+        .index__steps_img
+            display: none
 
-@media (max-width: 1920px) 
+//(min-width: 780px)
+    
+@media (max-width: 1440px)
+    #header 
+        .header__row
+            margin: 0 0
+
+
+@media (max-width: 1279px)
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+        padding: 0 40px
     main
     .index__page
         position: relative
-        max-width: 1920px
-        height: 2930px
-        background-image: url(../img/index-bg.png)
-        margin-left: -960px
-        left: 50%
+        max-width: 1280px
+        background-image: url(../img/index-page/index-bg-md.png)
+    .header__row 
+        .header__main 
+            .header__main_logo 
+                a
+                   margin: 0px 30px 0 0!important
+    .index__help 
+        padding: 78px 0 60px 0
+        .index__help_phone 
+            a
+                right: initial
+                bottom: 125px
+                font-size: 2.1rem
+    .index__doctors 
+        .index__doctors_block
+            justify-content: flex-start
+            padding: 90px 0 50px 20px
+    .callback__form 
+        padding: 20px 0 30px 0
+    .index__help 
+        .index__help_about
+            padding: 0 40px 0 60px
+    .index__steps 
+        .index__steps_block 
+            padding: 75px 0 185px 60px
+
+//(max-width: 1279px)
+
+@media (max-width: 1200px)  
+    .callback__form
+        padding: 70px 0 30px 0
+
+//(max-width: 1200px)  
+
+@media (max-width: 1100px)  
+    .index__help 
+        .index__help_about
+            padding: 0 40px 0 60px
+        .index__help_phone 
+            a
+                right: initial
+                bottom: 130px
+                left: 50px
+                font-size: 2.1rem
+    .index__steps 
+        .index__steps_block 
+            padding: 65px 0 120px 60px
+    #header
+        .header__row 
+            padding: 22px 0px
+            .header__main
+                flex-direction: column
+                align-items: flex-start!important
+                .header__main_logo 
+                    margin-bottom: 20px
+    .index__doctors 
+        .index__doctors_block 
+            justify-content: flex-start
+            padding: 147px 0 10px 20px
+
+// @media (max-width: 1100px)  
+
+@media (max-width: 991px) 
+    .container
+        max-width: 100%
+    .callback_btn 
+        a
+            padding: 15px 20px
+    .index__help 
+        .index__help_phone 
+            a
+                bottom: 144px
+                left: -20px
+    .callback__form 
+        padding: 120px 0 30px 0
+
+//(max-width: 991px)
+
+
+@media (max-width: 891px) 
+    .index__help 
+        .index__help_phone 
+            a
+                bottom: 170px
+                left: 0px
+    .index__steps 
+        .index__steps_block
+            padding: 15px 0 120px 60px
+
+//(max-width: 891px) 
+
+
+@media (max-width: 780px) 
+    
+    .container 
+        padding: 0 0
+    main
+    .index__page
+        position: relative
+        max-width: 1280px
+        background-image: none
+    #header 
+        .container 
+            .header__row 
+                padding: 30px 0 0 0
+                .header__main 
+                    padding: 0 25px
+                    .header__main_logo
+                        margin-bottom: 10px 
+                        a
+                            white-space: normal
+                            max-width: 125px!important
+                            display: inline-block
+                            line-height: 24px
+                    .header__main_phone
+                        display: none
+                .header__menu
+                       justify-content: flex-start 
+                       padding: 0 25px
+                       .header__menu_nav 
+                            ul
+                                flex-direction: column
+                                li
+                                    margin: 20px 0 0 0
+                .to_callback
+                    position: absolute 
+                    font-size: 1.4rem
+                    right: 0
+                    top: -60px
+                                
+    .index__start 
+        .index__titles 
+            .index__titles_subtitle
+                font-size: 2.8rem
+                line-height: 30px
+                margin: 30px 0 20px 0
+            .index__titles_name
+                font-size: 4.2rem
+                line-height: 40px
+            .index__titles_btn
+                margin: 30px 0 30px 0
+                text-align: center
+    .index__help
+        background-image: url(../img/index-page/index__help_bg.png)
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 0px 0 25px 0
+        background-position-y: 165px
+        .index__help_desc
+            .index__help_about
+                order: 2
+            .index__help_phone
+                order: 1
+                position: relative
+                display: flex
+                justify-content: center
+                margin-bottom: 60px
+                a
+                    bottom: 47px
+                    left: 50%
+                    transform: translateX(-50%)
+
+    .index__steps
+        .index__steps_block
+            padding: 20px 0 0px 60px
+        .index__steps_img 
+            display: flex
+            justify-content: center
+            margin-top: 30px
+
+    .index__doctors 
+        margin: 30px 0 0 0 
+        .index__doctors_block
+            padding: 30px 0 30px 20px
+        background-image: url(../img/index-page/doctors-bg-xs.png)
+        background-repeat: no-repeat
+        background-size: cover
+
+    .callback__form
+        .callback__form_container 
+            input
+                width: 90%
+        .agree
+            display: flex
+            justify-content: center
+            width: 90%
+            input
+                width: initial
+                margin: 0 20px 0 0
+
+    #footer
+        background-color: #D7D7D7
+
+//(max-width: 780px) 
