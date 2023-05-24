@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     
     <title>Хорошее решение</title>
   </head>
   <body>
-    <main>
+    <main class="index__page">
     <header id="header">
       <div class="container">
         <div class="row header__row">
@@ -127,6 +127,53 @@
         </div>
       </div>
     </section>
+
+    <section class="section callback__form">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="callback__form_title">Мы готовы ответить на все ваши вопросы!</div>
+            <form action="" class="callback__form_container">
+              <input type="text" placeholder="Имя">
+              <input type="tel" placeholder="+7 (___) ___-__-__">
+              <input type="text" placeholder="Промокод">
+              <div class="agree">
+                <input type="checkbox" name="" id="callback__form_agree" value="">
+                <label for="callback__form_agree" class="callback__form_agree">Согласен с <a href="">Политикой конфиденциальности</a> и <a href="">офертой</a></label>
+              </div>
+              <button type="submit" class="btn callback__btn"><div>Обратный звонок</div></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 footer__info">
+            <div class="footer__info_logo">
+              <a href="/">Хорошее решение</a>
+            </div>
+            <div class="footer__info_phone">
+              <a href="tel:+79851595045">+7 985 159-50-45</a>
+            </div>
+            <div class="footer__info_hours">
+              <div class="title">Время работы:</div>
+              <div class="txt">пн – вс, с 09:00 до 21:00</div>
+            </div>
+            <div class="footer__info_adress">
+              <div class="title">Адрес:</div>
+              <div class="txt">Москва, <br/>ул. Новослободская <br/>26 стр 1 каб 414</div>
+            </div>
+          </div>
+          <div class="col-lg-3 footer__partners">
+            <div class="title">Наши партнеры:</div>
+          </div>
+          <div class="col-lg-6 footer__about"></div>
+        </div>
+      </div>
+    </footer>
 
     </main>
 
