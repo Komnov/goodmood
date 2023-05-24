@@ -415,17 +415,35 @@ a:hover {
   }
 }
 @media (max-width: 891px) {
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding: 0 25px;
+  }
+  .index__help .index__help_about {
+    padding: 0 40px 0 25px;
+  }
+  .index__help .index__help_about .index__help_title {
+    margin-bottom: 20px;
+  }
   .index__help .index__help_phone a {
     bottom: 170px;
     left: 0px;
   }
   .index__steps .index__steps_block {
-    padding: 15px 0 120px 60px;
+    padding: 15px 0 120px 25px;
+  }
+  .index__doctors .index__doctors_block .index__doctors_title {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 780px) {
+  .index__page {
+    height: initial;
+  }
   .container {
     padding: 0 0;
+  }
+  .container .row {
+    margin: 0 0;
   }
   .index__page {
     position: relative;
@@ -463,7 +481,7 @@ a:hover {
   #header .container .header__row .to_callback {
     position: absolute;
     font-size: 1.4rem;
-    right: 0;
+    right: 20px;
     top: -60px;
   }
   .index__start .index__titles .index__titles_subtitle {
@@ -501,13 +519,26 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
   }
+  .index__help .index__help_desc .index__help_phone img {
+    max-width: 270px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .index__steps .index__steps_block {
-    padding: 20px 0 0px 60px;
+    padding: 20px 0 0px 25px;
+  }
+  .index__steps .index__steps_block .index__steps_title {
+    margin-bottom: 20px;
   }
   .index__steps .index__steps_img {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+  }
+  .index__steps .index__steps_img img {
+    max-width: 195px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .index__doctors {
     margin: 30px 0 0 0;
@@ -516,7 +547,7 @@ a:hover {
     background-size: cover;
   }
   .index__doctors .index__doctors_block {
-    padding: 30px 0 30px 20px;
+    padding: 30px 0 30px 0px;
   }
   .callback__form .callback__form_container input {
     width: 90%;
@@ -529,6 +560,9 @@ a:hover {
   .callback__form .agree input {
     width: initial;
     margin: 0 20px 0 0;
+  }
+  .callback__form {
+    padding: 30px 0 30px 0;
   }
   #footer {
     background-color: #D7D7D7;
