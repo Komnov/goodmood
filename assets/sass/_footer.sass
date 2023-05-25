@@ -17,14 +17,28 @@
         .footer__info_phone
             margin-bottom: 25px
             font-size: 2rem
-            a
-            :hover
+            display: flex
+            align-items: center
+            .phone
+                margin: 0 15px 0 0
+                font-size: 1.6rem
+            .phone:hover
                 text-decoration: underline
                 transition: 0.3s
+            .social
+            :not(:last-child)
+                margin: 0 10px 0 0
+            .social
+                img
+                    max-width: 30px
+                    object-fit: contain
         .footer__info_hours,
         .footer__info_adress
             margin-bottom: 25px
     .footer__partners
+        display: flex
+        flex-direction: column
+        align-items: center
         .partenrs__logo
             margin-top: 30px
             img
@@ -36,6 +50,7 @@
             display: flex
             flex-direction: column
             align-items: flex-end
+            text-align: right
             .phone
                 margin: 15px 0 10px
                 display: inline-block

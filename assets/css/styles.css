@@ -85,6 +85,48 @@ h1 {
   transition: 0.3s;
 }
 
+.callback__form {
+  padding: 45px 0;
+}
+.callback__form .callback__form_title {
+  color: #5A3A51;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.callback__form .callback__form_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.callback__form .callback__form_container input {
+  border: 1px solid #D7D7D7;
+  padding: 10px 12px;
+}
+.callback__form .callback__form_container :not(:last-child) {
+  margin-bottom: 5px;
+}
+.callback__form .callback__form_container :focus {
+  outline: none;
+}
+.callback__form .callback__form_container :active {
+  outline: none;
+}
+.callback__form .callback__form_container .agree {
+  margin: 25px 0;
+}
+.callback__form .callback__form_container .agree .callback__form_agree {
+  font-size: 1.3rem;
+}
+.callback__form .callback__form_container .agree .callback__form_agree a {
+  text-decoration: underline;
+}
+.callback__form .callback__form_container .agree .callback__form_agree :hover {
+  color: #C7CD9F;
+  transition: 0.3s;
+}
+
 #header .container .header__row {
   padding: 22px 0;
 }
@@ -143,14 +185,33 @@ h1 {
 #footer .footer__info .footer__info_phone {
   margin-bottom: 25px;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
 }
-#footer .footer__info .footer__info_phone :hover {
+#footer .footer__info .footer__info_phone .phone {
+  margin: 0 15px 0 0;
+  font-size: 1.6rem;
+}
+#footer .footer__info .footer__info_phone .phone:hover {
   text-decoration: underline;
   transition: 0.3s;
+}
+#footer .footer__info .footer__info_phone :not(:last-child) {
+  margin: 0 10px 0 0;
+}
+#footer .footer__info .footer__info_phone .social img {
+  max-width: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #footer .footer__info .footer__info_hours,
 #footer .footer__info .footer__info_adress {
   margin-bottom: 25px;
+}
+#footer .footer__partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #footer .footer__partners .partenrs__logo {
   margin-top: 30px;
@@ -165,6 +226,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  text-align: right;
 }
 #footer .footer__about .footer__documents .phone {
   margin: 15px 0 10px;
@@ -296,45 +358,6 @@ a:hover {
   font-size: 1.4rem;
 }
 
-.callback__form {
-  padding: 45px 0;
-}
-.callback__form .callback__form_title {
-  color: #5A3A51;
-  font-weight: 600;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 25px;
-}
-.callback__form .callback__form_container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.callback__form .callback__form_container input {
-  border: 1px solid #D7D7D7;
-  padding: 10px 12px;
-}
-.callback__form .callback__form_container :not(:last-child) {
-  margin-bottom: 5px;
-}
-.callback__form .callback__form_container :focus {
-  outline: none;
-}
-.callback__form .callback__form_container :active {
-  outline: none;
-}
-.callback__form .callback__form_container .agree {
-  margin: 25px 0;
-}
-.callback__form .callback__form_container .agree .callback__form_agree a {
-  text-decoration: underline;
-}
-.callback__form .callback__form_container .agree .callback__form_agree :hover {
-  color: #C7CD9F;
-  transition: 0.3s;
-}
-
 .business__page {
   position: relative;
   max-width: 1920px;
@@ -396,6 +419,14 @@ a:hover {
 @media (max-width: 1440px) {
   #header .header__row {
     margin: 0 0;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1370px) {
+  .index__page {
+    background-position-x: 60%;
+  }
+  .index__help .index__help_phone a {
+    right: 12%;
   }
 }
 @media (max-width: 1279px) {
@@ -695,14 +726,17 @@ a:hover {
   .callback__form {
     background-color: #fff;
   }
-  .footer__about {
+  #footer .footer__partners {
+    align-items: flex-start;
+  }
+  #footer .footer__about {
     padding-left: 25px !important;
   }
-  .footer__about .footer__documents {
+  #footer .footer__about .footer__documents {
     align-items: flex-start !important;
     margin: 30px 0 0 0;
   }
-  .footer__about .footer__documents .links {
+  #footer .footer__about .footer__documents .links {
     align-items: flex-start !important;
   }
 }
