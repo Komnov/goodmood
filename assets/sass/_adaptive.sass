@@ -45,6 +45,10 @@
         position: relative
         max-width: 1280px
         background-image: url(../img/index-page/index-bg-md.png)
+    main
+    .business__page
+        max-width: 1280px
+        background-image: url(../img/other/business-lg-bg.png)
     .header__row 
         .header__main 
             .header__main_logo 
@@ -69,6 +73,18 @@
     .index__steps 
         .index__steps_block 
             padding: 75px 0 185px 60px
+
+    .footer__partners
+        .partenrs__logo
+            margin-top: 30px
+            display: flex
+            img
+                max-width: 110px
+                object-fit: contain
+                margin: 0 15px 0 0
+
+    .benefits 
+        margin: 130px 0 130px 0
 
 //(max-width: 1279px)
 
@@ -104,6 +120,11 @@
             justify-content: flex-start
             padding: 147px 0 10px 20px
 
+    .business__start 
+        .business__start_txt 
+            .title 
+                margin: 30px 0 30px 0
+
 // @media (max-width: 1100px)  
 
 @media (max-width: 991px) 
@@ -120,6 +141,20 @@
     .callback__form 
         padding: 120px 0 30px 0
 
+    #footer
+        .footer__partners
+            .partenrs__logo
+                margin-top: 30px
+                img
+                    max-width: 80pxpx
+                    object-fit: contain
+                    margin: 0 15px 0 0
+        .footer__about
+            padding-left: 50px
+
+    .benefits 
+        margin: 200px 0 0px 0    
+
 //(max-width: 991px)
 
 
@@ -133,7 +168,7 @@
                 margin-bottom: 20px
         .index__help_phone 
             a
-                bottom: 170px
+                bottom: 135px
                 left: 0px
     .index__steps 
         .index__steps_block
@@ -142,6 +177,10 @@
         .index__doctors_block 
             .index__doctors_title
                 margin-bottom: 20px
+
+    .benefits
+        .benefits_txt
+            padding: 0 40px 0 25px
 
 //(max-width: 891px) 
 
@@ -153,6 +192,10 @@
         padding: 0 0
         .row
             margin: 0 0
+    h1
+        font-size: 2.8rem
+        line-height: 30px
+        margin: 30px 0 20px 0
     main
     .index__page
         position: relative
@@ -260,5 +303,31 @@
 
     #footer
         background-color: #D7D7D7
+
+    .business__page
+        background-image: none
+        background-color: #F4F4F4
+        .business__start_txt
+            background-image: url(../img/index-page/index__help_bg.png)
+            background-repeat: no-repeat
+            background-size: cover
+            padding-bottom: 30px
+        .benefits 
+            margin: 45px 0 30px 0
+            .benefits_txt 
+                .title
+                    font-size: 2rem
+
+    .callback__form
+        background-color: #fff
+
+
+    .footer__about 
+        padding-left: 25px!important
+        .footer__documents
+            align-items: flex-start!important
+            margin: 30px 0 0 0
+            .links
+                align-items: flex-start!important
 
 //(max-width: 780px) 
